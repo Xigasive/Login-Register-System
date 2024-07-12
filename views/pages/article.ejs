@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=10.0">
+    <title>Article</title>
+</head>
+
+<%- include('../partials/head', {title:'Article'}) %>
+<%- include('../partials/header') %>
+<body>
+    <ul>
+        <% article.forEach((article) => { %>
+            <li>
+                <h2><%= article.title %></h2>
+                <p><%= article.body %></p>
+            </li>
+            <hr>
+        <%  }) %>
+    </ul>
+</body>
+<%- include('../partials/footer') %>
+</html>
